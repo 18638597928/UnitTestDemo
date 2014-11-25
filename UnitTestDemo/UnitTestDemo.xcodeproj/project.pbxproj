@@ -13,7 +13,6 @@
 		9DF741F51A230D0100DFAC6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF741F31A230D0100DFAC6C /* Main.storyboard */; };
 		9DF741F71A230D0100DFAC6C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF741F61A230D0100DFAC6C /* Images.xcassets */; };
 		9DF741FA1A230D0100DFAC6C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DF741F81A230D0100DFAC6C /* LaunchScreen.xib */; };
-		9DF742061A230D0200DFAC6C /* UnitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF742051A230D0200DFAC6C /* UnitTestDemoTests.m */; };
 		9DF742181A232F0700DFAC6C /* LoginUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF742171A232F0700DFAC6C /* LoginUnitTest.m */; };
 		9DF742211A2330ED00DFAC6C /* LoginResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF742201A2330ED00DFAC6C /* LoginResult.m */; };
 		9DF742241A2333D900DFAC6C /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF742231A2333D900DFAC6C /* LoginManager.m */; };
@@ -21,13 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9DF742001A230D0200DFAC6C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DF741DE1A230D0100DFAC6C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9DF741E51A230D0100DFAC6C;
-			remoteInfo = UnitTestDemo;
-		};
 		9DF742191A232F0700DFAC6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9DF741DE1A230D0100DFAC6C /* Project object */;
@@ -48,9 +40,6 @@
 		9DF741F41A230D0100DFAC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DF741F61A230D0100DFAC6C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9DF741F91A230D0100DFAC6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9DF741FF1A230D0200DFAC6C /* UnitTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9DF742041A230D0200DFAC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DF742051A230D0200DFAC6C /* UnitTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTestDemoTests.m; sourceTree = "<group>"; };
 		9DF742131A232F0700DFAC6C /* LoginUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF742161A232F0700DFAC6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF742171A232F0700DFAC6C /* LoginUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginUnitTest.m; sourceTree = "<group>"; };
@@ -64,13 +53,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		9DF741E31A230D0100DFAC6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF741FC1A230D0200DFAC6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -91,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				9DF741E81A230D0100DFAC6C /* UnitTestDemo */,
-				9DF742021A230D0200DFAC6C /* UnitTestDemoTests */,
 				9DF742141A232F0700DFAC6C /* LoginUnitTest */,
 				9DF741E71A230D0100DFAC6C /* Products */,
 			);
@@ -101,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				9DF741E61A230D0100DFAC6C /* UnitTestDemo.app */,
-				9DF741FF1A230D0200DFAC6C /* UnitTestDemoTests.xctest */,
 				9DF742131A232F0700DFAC6C /* LoginUnitTest.xctest */,
 			);
 			name = Products;
@@ -128,23 +108,6 @@
 			children = (
 				9DF741EA1A230D0100DFAC6C /* Info.plist */,
 				9DF741EB1A230D0100DFAC6C /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		9DF742021A230D0200DFAC6C /* UnitTestDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				9DF742051A230D0200DFAC6C /* UnitTestDemoTests.m */,
-				9DF742031A230D0200DFAC6C /* Supporting Files */,
-			);
-			path = UnitTestDemoTests;
-			sourceTree = "<group>";
-		};
-		9DF742031A230D0200DFAC6C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9DF742041A230D0200DFAC6C /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,24 +162,6 @@
 			productReference = 9DF741E61A230D0100DFAC6C /* UnitTestDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9DF741FE1A230D0200DFAC6C /* UnitTestDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9DF7420C1A230D0200DFAC6C /* Build configuration list for PBXNativeTarget "UnitTestDemoTests" */;
-			buildPhases = (
-				9DF741FB1A230D0200DFAC6C /* Sources */,
-				9DF741FC1A230D0200DFAC6C /* Frameworks */,
-				9DF741FD1A230D0200DFAC6C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9DF742011A230D0200DFAC6C /* PBXTargetDependency */,
-			);
-			name = UnitTestDemoTests;
-			productName = UnitTestDemoTests;
-			productReference = 9DF741FF1A230D0200DFAC6C /* UnitTestDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		9DF742121A232F0700DFAC6C /* LoginUnitTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DF7421B1A232F0700DFAC6C /* Build configuration list for PBXNativeTarget "LoginUnitTest" */;
@@ -247,10 +192,6 @@
 					9DF741E51A230D0100DFAC6C = {
 						CreatedOnToolsVersion = 6.1;
 					};
-					9DF741FE1A230D0200DFAC6C = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = 9DF741E51A230D0100DFAC6C;
-					};
 					9DF742121A232F0700DFAC6C = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 9DF741E51A230D0100DFAC6C;
@@ -271,7 +212,6 @@
 			projectRoot = "";
 			targets = (
 				9DF741E51A230D0100DFAC6C /* UnitTestDemo */,
-				9DF741FE1A230D0200DFAC6C /* UnitTestDemoTests */,
 				9DF742121A232F0700DFAC6C /* LoginUnitTest */,
 			);
 		};
@@ -285,13 +225,6 @@
 				9DF741F51A230D0100DFAC6C /* Main.storyboard in Resources */,
 				9DF741FA1A230D0100DFAC6C /* LaunchScreen.xib in Resources */,
 				9DF741F71A230D0100DFAC6C /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9DF741FD1A230D0200DFAC6C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +251,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DF741FB1A230D0200DFAC6C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9DF742061A230D0200DFAC6C /* UnitTestDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9DF7420F1A232F0700DFAC6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,11 +262,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9DF742011A230D0200DFAC6C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9DF741E51A230D0100DFAC6C /* UnitTestDemo */;
-			targetProxy = 9DF742001A230D0200DFAC6C /* PBXContainerItemProxy */;
-		};
 		9DF7421A1A232F0700DFAC6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9DF741E51A230D0100DFAC6C /* UnitTestDemo */;
@@ -465,40 +385,6 @@
 			};
 			name = Release;
 		};
-		9DF7420D1A230D0200DFAC6C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UnitTestDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestDemo.app/UnitTestDemo";
-			};
-			name = Debug;
-		};
-		9DF7420E1A230D0200DFAC6C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = UnitTestDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestDemo.app/UnitTestDemo";
-			};
-			name = Release;
-		};
 		9DF7421C1A232F0700DFAC6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -552,14 +438,7 @@
 				9DF7420B1A230D0200DFAC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		9DF7420C1A230D0200DFAC6C /* Build configuration list for PBXNativeTarget "UnitTestDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9DF7420D1A230D0200DFAC6C /* Debug */,
-				9DF7420E1A230D0200DFAC6C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DF7421B1A232F0700DFAC6C /* Build configuration list for PBXNativeTarget "LoginUnitTest" */ = {
 			isa = XCConfigurationList;
@@ -568,6 +447,7 @@
 				9DF7421D1A232F0700DFAC6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

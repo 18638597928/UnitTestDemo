@@ -68,14 +68,35 @@
     }];
     [task resume];
     
-    [self waitForExpectationsWithTimeout:5 handler:^(NSError *error) {
-        if (nil!=error) {
-            XCTFail(@"time out error:%@",error);
-        }
+  
+    
+    
+}
+
+-(void)testPerformanceLogin{
+   
+       
+    NSString*username=@"username";
+    NSString*password=@"123456";
+        
+    [self measureMetrics:@[XCTPerformanceMetric_WallClockTime] automaticallyStartMeasuring:NO forBlock:^(){
+        
+        NSString*urlString=[LoginManager loginRequsetUrlString:username password:password];
+        NSData*data=[NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
+        [self startMeasuring];
+        LoginResultParser*parser=[[LoginResultParser alloc]init];
+        LoginResult*result=[parser parse:data];
+        XCTAssertEqual(result.resultCode, LoginResultCodeSuccess);
+        [self stopMeasuring];
     }];
     
-
     
+}
+
+-(void)testEasyPerformanceLogin{
+    [self measureBlock:^{
+        [self testLoginFuction];
+    }];
 }
 
 @end

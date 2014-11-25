@@ -14,6 +14,7 @@
 -(LoginResult*)parse:(NSData*)data{
     LoginResult*lr=[[LoginResult alloc]init];
     lr.resultCode=LoginResultCodeSuccess;
+    sleep(1);
     return lr;
 }
 

@@ -47,7 +47,10 @@
     }];
 }
 
+typedef void (^TestMehtod)(void*,BOOL);
+
 -(void)testLoginFuction{
+    
     
     NSString*username=@"username";
     NSString*password=@"123456";
@@ -68,7 +71,9 @@
     }];
     [task resume];
     
-  
+    [self waitForExpectationsWithTimeout:5 handler:^(NSError *error) {
+        XCTAssertNil(error);
+    }];
     
     
 }
